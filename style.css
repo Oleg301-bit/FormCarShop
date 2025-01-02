@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --el-position: 15px;
+  --el-width: 190px;
+  --el-gap: 10px;
+}
+form {
+  margin: 100px auto;
+}
+fieldset {
+  width: 300px;
+  overflow: auto;
+}
+
+legend {
+  font-size: 1.5rem;
+}
+.main-contener {
+  display: flex;
+  justify-content: center;
+  gap: var(--el-gap);
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--el-position);
+}
+.pers-inf {
+  display: flex;
+  flex-direction: column;
+}
+.gender-position {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--el-position);
+}
+.exp-pos,
+.brand-pos,
+.model-pos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--el-position);
+}
+input:not([type="radio"]):not([type="checkbox"]) {
+  width: var(--el-width);
+}
+input[type="checkbox"] {
+  margin-bottom: var(--el-position);
+  margin-left: 30px;
+}
+select {
+  width: 130px;
+}
+textarea {
+  width: var(--el-width);
+}
+.flex-color {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--el-gap) - 5px);
+}
+
+datalist {
+  display: flex;
+  justify-content: space-between;
+  writing-mode: horizontal-tb;
+  width: 200px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--el-gap) + 10px);
+  margin-top: 10px;
+}

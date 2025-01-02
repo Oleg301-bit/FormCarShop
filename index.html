@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="main-contener">
+        <fieldset class="flex-contener">
+          <legend>Personal info</legend>
+          <div class="pers-inf">
+            <div class="position">
+              <label for="fname">First Name</label>
+              <div>
+                <input type="text" id="fname" />
+              </div>
+            </div>
+            <div class="position">
+              <label for="lname">Last Name</label>
+              <div>
+                <input type="text" id="lname" />
+              </div>
+            </div>
+            <div class="position">
+              <label for="date">Birthday</label>
+              <div>
+                <input type="datetime-local" id="date" />
+              </div>
+            </div>
+            <div class="gender-position">
+              <label for="gender">Gender</label>
+              <div>
+                <label for="gender">Male</label>
+
+                <input type="radio" id="gender" name="gender" />
+              </div>
+
+              <div>
+                <label for="gender">Female</label>
+
+                <input type="radio" id="gender" name="gender" />
+              </div>
+            </div>
+            <div class="exp-pos">
+              <label for="exp">Drive experience</label>
+              <div>
+                <select name="exp" id="exp">
+                  <option value="---" selected>---</option>
+                  <option value="expert">expert</option>
+                  <option value="more than 10">more than 10</option>
+                  <option value="5-10">5-10</option>
+                  <option value="2-5">2-5</option>
+                  <option value="less than 2">less than 2</option>
+                  <option value="beginner">beginner</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Contacts</legend>
+          <div class="position">
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="position">
+            <label for="tel">Phone</label>
+            <input type="text" id="tel" />
+          </div>
+          <div class="position">
+            <label for="adr">Address</label>
+            <textarea name="adr" id="adr"></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Car info</legend>
+          <div class="brand-pos">
+            <label for="brand">Brand</label>
+            <select name="brand" id="brand">
+              <option value="---" selected>---</option>
+              <option value="Ford">Ford</option>
+              <option value="BMW">BMW</option>
+              <option value="Toyota">Toyota</option>
+            </select>
+          </div>
+          <div class="model-pos">
+            <label for="model">Model</label>
+            <select name="model" id="model">
+              <option value="---" selected>---</option>
+              <option value="Mondeo 4">Mondeo 4</option>
+              <option value="I5"></option>
+              <option value="RAV 4">RAV 4</option>
+            </select>
+          </div>
+          <div>
+            <label for="used">Used</label>
+            <input type="checkbox" name="used" id="used" />
+          </div>
+          <div class="flex-color">
+            <label for="red">Red</label>
+            <input type="radio" name="color" id="red" />
+            <label for="black">Black</label>
+            <input type="radio" name="color" id="black" />
+            <label for="blue">Blue</label>
+            <input type="radio" name="color" id="blue" />
+            <label for="white">White</label>
+            <input type="radio" name="color" id="white" />
+            <label for="grey">Grey</label>
+            <input type="radio" name="color" id="grey" />
+          </div>
+          <div>
+            <label for="price">Price</label>
+
+            <div>
+              <input
+                type="range"
+                name="price"
+                id="price"
+                list="markers"
+                step="10"
+                min="10"
+                max="80"
+              />
+            </div>
+            <datalist id="markers">
+              <option value="10" label="10"></option>
+              <option value="20" label="20"></option>
+              <option value="30" label="30"></option>
+              <option value="40" label="40"></option>
+              <option value="50" label="50"></option>
+              <option value="60" label="60"></option>
+              <option value="70" label="70"></option>
+              <option value="80" label="80"></option>
+            </datalist>
+          </div>
+        </fieldset>
+      </div>
+      <div class="btn">
+        <button type="reset">Cancel</button>
+        <button type="submit">Ok</button>
+      </div>
+    </form>
+  </body>
+</html>
