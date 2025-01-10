@@ -33,14 +33,8 @@ legend {
   display: flex;
   flex-direction: column;
 }
-.gender-position {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--el-position);
-}
-.exp-pos,
-.brand-pos,
-.model-pos {
+
+.check-box {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--el-position);
@@ -67,7 +61,6 @@ textarea {
 datalist {
   display: flex;
   justify-content: space-between;
-  writing-mode: horizontal-tb;
   width: 200px;
 }
 .btn {
